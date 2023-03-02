@@ -7,4 +7,10 @@ createdb:
 dropdb:
 	podman exec -ti mysql-laravel10 mysql -u root -ppassword -e "DROP DATABASE db_laravel_10"
 
-.PHONY: mysql createdb dropdb
+migrate:
+	php artisan migrate
+
+serve:
+	php artisan serve
+
+.PHONY: mysql createdb dropdb migrate serve
