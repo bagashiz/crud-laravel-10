@@ -13,16 +13,17 @@ This is simple CRUD post app built with laravel 10.0 web framework.
 
 ## Setup
 
-### Using Podman
-
-1. Clone this repository and go to the project directory.
+1. Clone this repository and go to the project directory, then install the dependencies.
 
     ```bash
     git clone https://github.com/bagashiz/crud-laravel-10.git
     cd crud-laravel-10
+    composer install
     ```
 
-2. Run the following make commands to setup the database.
+### Using Podman
+
+1. Run the following make commands to setup the database.
 
     ```bash
     make mysql
@@ -31,24 +32,17 @@ This is simple CRUD post app built with laravel 10.0 web framework.
     make serve
     ```
 
-3. Start the PHP server.
+2. Start the PHP server.
 
     ```bash
     php artisan serve
     ```
 
-4. Go to `http://localhost:8000` in your browser.
+3. Go to `http://localhost:8000` in your browser.
 
 ### Using Docker
 
-1. Clone this repository and go to the project directory.
-
-    ```bash
-    git clone https://github.com/bagashiz/crud-laravel-10.git
-    cd crud-laravel-10
-    ```
-
-2. Change the `podman` commands to `docker` in the Makefile, then follow the same steps as above.
+Change the `podman` commands to `docker` in the Makefile, then follow the same steps as above.
 
 ## Learning and Reference Sources
 
